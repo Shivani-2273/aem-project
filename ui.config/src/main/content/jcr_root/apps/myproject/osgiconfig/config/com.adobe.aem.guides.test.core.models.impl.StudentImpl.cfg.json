@@ -1,0 +1,4 @@
+{
+  "activities": [ "Skateboarding", "Surfing", "Skiing" ],
+  "random.seed:Integer": 32
+}

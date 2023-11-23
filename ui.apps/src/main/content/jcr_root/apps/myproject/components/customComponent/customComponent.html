@@ -1,0 +1,21 @@
+<div class="cmp-mycomponent__item" data-sly-use.model="com.adobe.aem.guides.test.core.models.CustomComponentModel" data-sly-test="${model.heading}">
+    <h1 class="cmp-custom__heading">${model.heading}</h1>
+</div>
+
+<sly data-sly-use.itemsObj="com.adobe.aem.guides.test.core.models.CustomComponentModel">
+    <div class="g-row">
+        <sly data-sly-list.item="${model.items}">
+            <div class="print-hidden card">
+                <div class="info-box__body card-content">
+                    <!-- Display Image -->
+                    <img src="${item.getImagePath}"  class="card-image" />
+
+                    <!-- Other card content -->
+                    <h2 class="cmp-custom__title card-title">${item.text}</h2>
+                    <p class="cmp-description card-description">${item.paragraph}</p>
+                    <p class="cmp-cta card-cta">${item.cta}</p>
+                </div>
+            </div>
+        </sly>
+    </div>
+</sly>
