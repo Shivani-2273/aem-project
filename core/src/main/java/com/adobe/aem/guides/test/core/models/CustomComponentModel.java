@@ -8,6 +8,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import java.util.List;
@@ -27,7 +28,15 @@ public class CustomComponentModel {
     @ValueMapValue
     private String heading;
 
+    @ValueMapValue
+    private String myCheckbox;
+
+    @OSGiService
+    CustomComponentConfig customComponentConfig;
+
     @ChildResource
     List<Items> items;
+
+
 
 }

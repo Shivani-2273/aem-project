@@ -1,10 +1,31 @@
 .cmp-mycomponent__item{
-  text-align: center;
+    text-align: center;
+}
+.custom-prop{
+    margin-top: 30px;
+    text-align: center;
+}
+.error-message{
+    color:red;
+    font-weight: bold;
+    text-align: center;
+}
+.details-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color:blue;
+    font-weight: bold;
+    text-align: center;
+}
+.custom-value{
+    color:blue;
+
 }
 .g-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
+    justify-content: center;
 }
 
 .card {
@@ -22,7 +43,7 @@
 
 .card-image {
     width: 100%;
-    height: 200px; /* Fixed height */
+    height: 200px;
     object-fit: cover;
 }
 

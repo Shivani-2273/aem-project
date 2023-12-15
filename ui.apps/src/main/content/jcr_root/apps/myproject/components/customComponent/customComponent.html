@@ -2,6 +2,15 @@
     <h1 class="cmp-custom__heading">${model.heading}</h1>
 </div>
 
+<div>
+    <sly data-sly-test="${model.myCheckbox}">
+        <div class="details-container">Name : ${model.customComponentConfig.firstName} ${model.customComponentConfig.lastName}</div>
+    </sly>
+    <sly data-sly-test="${!model.myCheckbox}">
+        <div class="error-message">Enable checkbox to see author name</div>
+    </sly>
+</div>
+
 <sly data-sly-use.itemsObj="com.adobe.aem.guides.test.core.models.CustomComponentModel">
     <div class="g-row">
         <sly data-sly-list.item="${model.items}">
@@ -18,4 +27,10 @@
             </div>
         </sly>
     </div>
+
+    <div class="custom-prop">
+        Custom field value -<span class="custom-value"> ${pageProperties.customTitle}</span>
+    </div>
+
+
 </sly>
