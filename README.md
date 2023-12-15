@@ -3,7 +3,7 @@
 1.Create a OSGi COnfig file and fetch the config values in sling model and show them in HTL with condition
 condition: Your dialog will have one checkbox- if it is enabled then show the config values else show one text field value added in cq-dialog
 
-  Checkbox configuration is handled in "customComponent" and "CustomComponentConfigImpl".
+Checkbox configuration is handled in "customComponent" and "CustomComponentConfigImpl".
  
  ![Task3-1](https://github.com/Shivani-2273/aem-project/assets/100900027/3013e867-895a-4987-a111-307bceda60bc)
 
@@ -12,7 +12,7 @@ condition: Your dialog will have one checkbox- if it is enabled then show the co
  
 2.Create one custom field in Page properties and fetch this field value in HTL of your component
 
- I have created a custom tab with an input field and displayed the value in the existing component. PFA image for page properties tab.
+I have created a custom tab with an input field and displayed the value in the existing component. PFA image for page properties tab.
 
 ![CustomTab](https://github.com/Shivani-2273/aem-project/assets/100900027/5af5fd40-389f-4dd9-b3a1-3e81dd4ba565)
 
@@ -20,8 +20,8 @@ condition: Your dialog will have one checkbox- if it is enabled then show the co
 3.Explore servlet and create your own usecase demo using servlet
 
 I have created two classes for this purpose:
-1. SlingServletByPath
-2. SlingServletByResource
+SlingServletByPath
+SlingServletByResource
 
 Additionally, a form component has been developed for the POST method.
 Refer to FormSubmissionServlet and the formComponent.
